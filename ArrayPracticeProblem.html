@@ -1,0 +1,34 @@
+<!-- Qs -> Create an array to store companies -> "Bloomberg","Microsoft","Uber","Google","IBM","Netflix"
+
+a. Remove the first company name
+
+b. Remove Uber & Add Ola in Its place
+
+c. Add amzon at end -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+    // Remove the first company from the array
+    // companies.shift();
+    // console.log(companies);
+
+    // b-> Remove Uber & add Ola in its place
+    companies.splice(2,1,"Ola");
+    console.log(companies);
+
+    // c -> Add amazon at end
+    companies.push("Amazon");
+    console.log(companies);
+</script>
+</html>
