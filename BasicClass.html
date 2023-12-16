@@ -1,0 +1,34 @@
+<!-- Here we make a basic class toyota and some object of it -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic class and object example</title>
+</head>
+<body>
+    <h1>Here we make a basic class toyota and some object of it</h1>
+</body>
+<script>
+    class Toyota {
+        start() {
+            console.log("Start");
+        }
+
+        stop() {
+            console.log("Stop");
+        }
+
+        setBrandName (newbrand) {
+            this.brand = newbrand ; 
+        }
+    }
+
+    let fortuner = new Toyota();
+    fortuner.setBrandName("fortuner");
+
+    let lexus = new Toyota();
+    lexus.setBrandName("lexus");
+</script>
+</html>
