@@ -1,0 +1,37 @@
+<!-- Prototype : prototype have special property which it gives to the object whenever the object is declared and anything which having type as a object(Array) 
+
+whenever we declare an object(array) it have a property called proptotype we can easily go through this by printing the array in console.
+the push, pop and many property of Array came with prototype. 
+
+we can set the prototype as proto
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Example</title>
+</head>
+<body>
+    <h1>how to set prototype </h1>
+</body>
+<script>
+    const employee = {
+        colcTax() {
+            console.log("tax rate is 10%")
+        },
+        // calcTax2 : function(){
+        //     console.log("tax rate is 10%"); correct way to write in genral
+        // }
+    };
+
+    const karan = {
+        salary : 50000,
+    };
+
+    karan.__proto__ = employee ;
+</script>
+</html>
