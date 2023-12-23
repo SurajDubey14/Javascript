@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing value to Constructor</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Student {
+        constructor(newname , newage){
+            console.log("Constructor is called i.e. creating new object");
+            this.name = newname ;
+            this.age = newage
+        }
+        eat() {
+            console.log("eat");
+        }
+        walk() {
+            console.log("walk");
+        }
+    }
+
+    let Rahul = new Student("Suraj" , 25);
+    console.log(Rahul);
+</script>
+</html>
