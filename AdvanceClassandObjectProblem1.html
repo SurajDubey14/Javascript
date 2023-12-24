@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem on classes and object </title>
+</head>
+<body>
+    <h1> you are creating a website for your college. Create a class User with 2 properties, name and email. It also has a method called viewData( ) that allows user to view website data After that create a new class Admin which inherits from User. Add a new method called editData to admin that allows it to edit website data </h1>
+</body>
+<script>
+    class User{
+        constructor(name, email){
+            this.name = name;
+            this.email = email;
+        }
+
+        viewData(){
+            console.log(" Website Data");
+            console.log(this.name);
+            console.log(this.email);
+        }
+    }
+    class Admin extends User{
+        constructor(name , email){
+            super(name , email);
+        }
+        editData(){
+            console.log("Data will be modified");
+        }
+    }
+    let name = prompt("Enter your name");
+    let email = prompt("Enter your email");
+
+    let Student = new User(name , email);
+    let admin1= new Admin("Pandat" , "surajpandat1472002@gmail.com");
+</script>
+
+</html>
