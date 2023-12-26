@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For IN loop</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const employee = {
+    fullName : "Golu Dubey" ,
+    age : 52,
+    weight : 68
+}
+console.log(employee["fullName"]); // For printing single value of the object key
+for(let key in employee){
+    console.log(key); // gives the key name in the object ex = fullName , age , Weight
+    console.log(employee[key]);  // console.log(employee.key) return the value of key of Data
+}
+</script>
+</html>
