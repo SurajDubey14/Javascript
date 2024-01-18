@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Keyword</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class HumanParent {
+        constructor(name) {
+            console.log("Parent constructor");
+            this.species = "Homo sapiens";
+            this.name = name
+        }
+        eat(){
+            console.log("HumanParent eats food");
+        }
+    }
+
+    class child extends HumanParent{
+        constructor(newclass ,name){
+            console.log("Entered child construcot");
+            super(name); // To invoke the parent class constructor
+            this.class = newclass;
+            console.log("Exit child constructor");
+        }
+        Games(){
+            console.log("Play games outside or inside the home");
+        }
+    }
+
+    let chunnu = new child(7);
+
+</script>
+</html>
