@@ -1,0 +1,37 @@
+<!-- Problem => Take a number  n as a input from user. create an array of number from 1-n.
+    use reduce method to calculate sum of all number in array,
+    use reduce method to calculate Product of all number in array,
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let n = prompt("enter a number");
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr.push(i);
+    }
+    console.log(arr);
+
+    let sum = arr.reduce((prev , curr ) => {
+        return prev + curr;
+    });
+
+    let mul = arr.reduce((prev , curr ) => {
+        return prev * curr;
+    });
+    console.log(sum);
+    console.log(mul);
+</script>
+
+</html>
